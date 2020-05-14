@@ -3,9 +3,8 @@ Supply is an e-commerce template for [Jekyll](https://jekyllrb.com/) + [Gumroad]
 If you are a Gumroad creator, you can use Supply with Jekyll to display products within your site or blog.
 
 Browse through a [live demo](https://templates.supply).
-{% include gumroad-link.html id="ghibli-storyboard" %}
 
-![Supply template screenshot]({{ site.baseurl }}/images/templates/jekyll/Supply-temp.png)
+![Supply template screenshot](/images/templates/jekyll/Supply-temp.png)
 
 Find more [templates, themes, and Jekyll tutorials](https://jekyllrb.com/resources/).
 
@@ -124,5 +123,3 @@ Write something like:
 to get a product display like this:
 
 <a href="https://gum.co/supply" class="no-underline pv2 grow db"><img class="w-100" src="/images/screenshot.png"></a>
-
-{% include gumroad-overlay.html id="supply" %}

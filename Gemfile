@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 git_source(:github) {|templatesupply| "https://github.com/YJPL/{templates-supply}" }
 
-gem "jekyll", "~> 4.0.0"
+gem "jekyll", "~> 3.8.5"
 
 group :jekyll_plugins do
   gem "jekyll-leaflet"
