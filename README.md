@@ -126,4 +126,4 @@ to get a product display like this:
 
 ## Open source
 
-Please use and contribute to *Supply* [Supply repo](https://github.com/YJPL/Supply/).
+Please use and [contribute to *Supply* ](https://github.com/YJPL/Supply/pulls).
