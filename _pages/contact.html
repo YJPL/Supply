@@ -14,6 +14,9 @@ map-id:
 ---
 {% include formcarry.html %}
 
+{% comment %}
+This is an example of how to set up a map, if you uncomment this, the map will work locally and on your own server (AWS, Netlify, etc.) but won't work with GitHub Pages.
+
 {% leaflet_map {"zoom" : 6 } %}
 
     {% leaflet_marker { "latitude" : 50.825909,
@@ -27,3 +30,5 @@ map-id:
          } %}
 
 {% endleaflet_map %}
+
+{% endcomment %}
