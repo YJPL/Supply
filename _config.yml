@@ -6,7 +6,7 @@ google_analytics_key:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-tagline: 
+tagline:
 description: Jekyll template for e-commerce with Gumroad integration
 author:
   name: Supply
@@ -64,8 +64,13 @@ include:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - node_modules
   - README.md
   - LICENCE
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
 # Contact settings
 formcarry: https://formcarry.com/ # add you formcarry endpoint url (see https://formcarry.com/documentation/getting-started)
