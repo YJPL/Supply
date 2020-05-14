@@ -5,7 +5,7 @@ If you are a Gumroad creator, you can use Supply with Jekyll to display products
 Browse through a [live demo](https://templates.supply).
 {% include gumroad-link.html id="ghibli-storyboard" %}
 
-![Supply template screenshot]({{ site.baseurl }}/images/templates/jekyll/Supply-temp.png)
+![Supply template screenshot](/images/templates/jekyll/Supply-temp.png)
 
 Find more [templates, themes, and Jekyll tutorials](https://jekyllrb.com/resources/).
 
