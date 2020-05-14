@@ -2,6 +2,7 @@
 title: Supply
 url: "https://yjpl.github.io/Supply/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl:
+repo: https://github.com/YJPL/Supply/
 google_analytics_key:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
