@@ -5,17 +5,25 @@ permalink: /contact/
 email:
 hero: Get in touch
 map-id:
-  lat: 41.881832
-  long: -87.623177
-  address: 'Brussels, Belgium'
-  zoom: 16
-  popup-title: "Supply"
+  lat: # the page below id only an example, add your coordinates
+  long: # # Have a look at jekyll-leaflet plugin documentation (https://github.com/DavidJVitale/jekyll-leaflet)
+  address: # And also refer to Leaflet.js (https://leafletjs.com)
+  zoom:
+  popup-title:
   popup-text: ""
 ---
 {% include formcarry.html %}
 
-{% leaflet_map %}
-    {% leaflet_marker { "latitude" : 41.881832,
-                       "longitude" : -87.623177,
-                       "popupContent" : "Hello World from Chicago!"} %}
+{% leaflet_map {"zoom" : 6 } %}
+
+    {% leaflet_marker { "latitude" : 50.825909,
+                       "longitude" : 4.3701717,
+                       "popupContent" : "Supply, made in Brussels, Belgium"} %}
+
+    {% leaflet_geojson {
+        "type": "Feature",
+        "properties": { "popupContent": "Supply",
+                        "href": "https://templates.supply" },
+         } %}
+
 {% endleaflet_map %}
