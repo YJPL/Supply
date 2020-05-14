@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-git_source(:github) {|templatesupply| "https://github.com/YJPL/{templates-supply}" }
+git_source(:github) {|supply| "https://github.com/YJPL/{supply}" }
 
 gem "jekyll", "~> 4.0.1"
 
