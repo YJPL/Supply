@@ -45,3 +45,11 @@ Find more [templates, themes and Jekyll tutorials](https://jekyllrb.com/resource
 [Supply setup](/supply-theme-setup/)
 
 [Theme Development](/theme-development/)
+
+## Open source
+
+
+[Get Supply](https://github.com/YJPL/Supply/archive/master.zip){: .btn .btn-outline--secondary }
+
+Please use and contribute to [Supply on GitHub](https://github.com/YJPL/Supply/){: .b .dark-blue .hover-blue}
+{: .notice}

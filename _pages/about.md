@@ -2,16 +2,22 @@
 permalink: /about/
 title: About
 hero: About
-text-button: I want this theme!
+text-button: I demand Supply!
 ---
 ## Supply, a Jekyll theme
 Supply is an e-commerce template for [Jekyll](https://jekyllrb.com/) + [Gumroad](https://gumroad.com), designed by [alternatyves](https://alternatyves.com/).
 If you are a Gumroad creator, you can use Supply with Jekyll to display products within your site or blog.
 
-Browse through a [live demo](https://templates.supply).
-{% include gumroad-link.html id="supply" %}
+[Supply Code on GitHub](https://github.com/YJPL/Supply/){: .btn .btn-outline--secondary }
 
-![Supply template screenshot](/images/templates/jekyll/Supply-temp.png)
+[Demo Site](/){: .btn .btn-outline--info }
+
+[Templates Supply](https://templates.supply){: .btn .btn-outline--success }
+
+
+<a href="https://gum.co/supply" class="no-underline pv2 grow db"><img class="w-100" src="/images/templates/jekyll/Supply-temp.png"></a>
+
+{% include gumroad-overlay.html id="supply" %}
 
 Find more [templates, themes, and Jekyll tutorials](https://jekyllrb.com/resources/).
 
@@ -132,3 +138,11 @@ to get a product display like this:
 <a href="https://gum.co/supply" class="no-underline pv2 grow db"><img class="w-100" src="/images/screenshot.png"></a>
 
 {% include gumroad-overlay.html id="supply" %}
+
+## Open source
+
+
+[Get Supply](https://github.com/YJPL/Supply/archive/master.zip){: .btn .btn-outline--secondary }
+
+Please use and contribute to [Supply on GitHub](https://github.com/YJPL/Supply/){: .b .blue .hover-light-blue}
+{: .notice}
