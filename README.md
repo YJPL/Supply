@@ -123,3 +123,7 @@ Write something like:
 to get a product display like this:
 
 <a href="https://gum.co/supply" class="no-underline pv2 grow db"><img class="w-100" src="/images/screenshot.png"></a>
+
+## Open source
+
+Please use and contribute to *Supply* [Supply repo](https://github.com/YJPL/Supply/).
