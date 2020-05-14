@@ -31,7 +31,7 @@ Now, it would be a lot nicer if we had an actual product image linking to Gumroa
 Let's write this above our include liquid snippet:
 
 ```html
-{% raw %}<a href="https://gum.co/soon-jekyll" class=""><img class="w-100" src="{{site.baseurl}}/images/templates/jekyll/Soon_Jekyll-template-sample.png"></a>{% endraw %}
+{% raw %}<a href="https://gum.co/soon-jekyll" class=""><img class="w-100" src="/images/templates/jekyll/Soon_Jekyll-template-sample.png"></a>{% endraw %}
 ```
 
 ```liquid
@@ -43,7 +43,7 @@ Note that you can add class to style your html and image according to your site 
 
 That will output the following:
 
-<a href="https://gum.co/soon-jekyll" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/templates/jekyll/Soon_Jekyll-template-sample.png"></a>
+<a href="https://gum.co/soon-jekyll" class="no-underline pv2 grow db"><img class="w-100" src="/images/templates/jekyll/Soon_Jekyll-template-sample.png"></a>
 {% include gumroad-embed.html id="strip" %}
 
 It now looks much better.

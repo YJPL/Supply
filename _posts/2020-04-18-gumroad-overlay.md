@@ -38,7 +38,7 @@ For example, let's start this Gumroad link: [https://gum.co/soon-jekyll](https:/
 Let's add a product image in the `images` folder of our site, then we can write this above our button include liquid snippet:
 
 ```html
-{% raw %}<a href="https://gum.co/soon-jekyll" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/templates/jekyll/Soon_Jekyll-template-sample.png"></a>
+{% raw %}<a href="https://gum.co/soon-jekyll" class="no-underline pv2 grow db"><img class="w-100" src="/images/templates/jekyll/Soon_Jekyll-template-sample.png"></a>
 
 {% include gumroad-overlay.html id="soon-jekyll" %}{% endraw %}
 ```
@@ -48,7 +48,7 @@ Note that you can add class to style your html and image.
 
 It now looks much better:
 
-<a href="https://gum.co/soon-jekyll" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/templates/jekyll/Soon_Jekyll-template-sample.png"></a>
+<a href="https://gum.co/soon-jekyll" class="no-underline pv2 grow db"><img class="w-100" src="/images/templates/jekyll/Soon_Jekyll-template-sample.png"></a>
 
 {% include gumroad-overlay.html id="soon-jekyll" %}
 
