@@ -1,6 +1,6 @@
 # This will be the first part of the title tag for your site <title> site.name + page.title </title>
 title: Supply
-url: "https://templates.supply"
+url: "https://yjpl.github.io/Supply/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl:
 google_analytics_key:
 
@@ -18,7 +18,8 @@ social:
   links:
     - https://github.com/YJPL/supply
 
-# Build
+# Build settings
+markdown: kramdown
 timezone: FR
 
 collections:
