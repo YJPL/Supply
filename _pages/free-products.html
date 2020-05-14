@@ -1,0 +1,37 @@
+---
+title: Free products
+subtitle: This is an example page to display product by genre
+permalink: /free-products-samples/
+hero: Free products
+layout: default
+---
+<div itemscope itemtype="http://schema.org/ItemList" class="content" id="products">
+	<section class="cf pb5 ph6-ns ph2">
+		<div class="container flex-wrap flex">
+
+    {% assign products = site.products | where_exp: "product", "product.price contains 'Free'" %}
+    {% for product in products reversed %}
+
+		<div itemprop="itemListElement" itemscope itemtype="http://schema.org/Product" class="product-list w-100 w-50-m ph2-m w-third-l ph3">
+          <div itemprop="image" class="style aspect-ratio aspect-ratio--1x1" >
+            <a href="{{ product.url }}" style="background-image:url({{ product.image }});"
+            class="db bg-center cover aspect-ratio--object" /><h4 class="f4 helvetica bg-green no-underline white shadow-2 grow pa2 pv3 dib mr3">$ {{ product.price }}</h4>
+            </a>
+					</div>
+						<article itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer" class="product-details dib v-mid lh-copy avenir">
+							<h3><a class="f5 f4-ns mb0 link black-90 link dim avenir" href="{{ product.url }}"><span itemprop="name">{{ product.title }}</span></a></h3>
+							<h4 itemprop="itemOffered">Software: {{ product.software }}</h4>
+							<div itemprop="description" class="product-description f6 f5 fw4 mt1 black-60 pb2">
+
+								{{ product.description_markdown | truncate: 92 | markdownify }}
+
+							</div>
+						</article>
+					</div>
+				{% endfor %}
+    </div>
+    <h4 class="f4 helvetica">Not what you are looking for?</h4>
+    {% include site-search.html %}
+  </div>
+</section>
+</div>

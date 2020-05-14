@@ -1,0 +1,584 @@
+/*! Theme specific CSS */
+
+/* Custom aspect ratios */
+.aspect-ratio--185x100 { padding-bottom: 54.05%; }
+.aspect-ratio--9x16 { padding-bottom: 177.77%; }
+
+.aspect-ratio--2x1 { padding-bottom: 50%; }
+.aspect-ratio--1x2 { padding-bottom: 200%; }
+
+/* Links */
+
+a {
+  color: #FF6F61;
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+a.nested-author-cta {
+  color: green;
+}
+a.nested-author-cta:hover {
+  color: red;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  font-family: .code;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: .375rem .875rem;
+  margin-top: .5rem;
+  border-radius: 0;
+}
+.btn:hover {
+  color: white;
+}
+.btn--block {
+  display: block;
+  width: 100%;
+}
+.btn--primary {
+  color: #33CC99;
+  background-color: white;
+  border: .125rem solid #33CC99;
+}
+.btn--primary:hover {
+  color: white;
+  background-color:#33CC99;
+  border: .125rem solid white;
+}
+.btn--secondary {
+  background-color: blue;
+  border: .125rem solid blue;
+}
+.btn--success {
+  background-color: #33CC99;
+  border: .125rem solid #33CC99;
+}
+.btn--warning {
+  background-color: orange;
+  border: .125rem solid orange;
+}
+.btn--danger {
+  background-color: #ff725c;
+  border: .125rem solid #ff725c;
+}
+.btn--info {
+  background-color: #cdecff;
+  border: .125rem solid #cdecff;
+}
+.btn--light {
+  color: #CCCCCC;
+  background-color: white;
+  border: .125rem solid #EEEEEE;
+}
+.btn--light:hover {
+  color: #EEEEEE;
+}
+.btn--dark {
+  background-color: black;
+  border: .125rem solid black;
+}
+.btn--small {
+  padding: .25rem 1rem;
+  font-size: .875rem;
+}
+.btn--large {
+  padding: .5rem 2rem;
+  font-size: 2.25rem;
+}
+.btn--x-large {
+  padding: 1rem 2rem;
+  font-size: 3rem;
+}
+
+.btn-outline--primary {
+  color: #33cc99;
+  border: .125rem solid #33cc99;
+}
+.btn-outline--primary:hover {
+  color: #33cc99;
+  background-color: #70dbb8;
+}
+.btn-outline--secondary {
+  color: blue;
+  border: .125rem solid blue;
+}
+.btn-outline--secondary:hover {
+  color: #96CCFF;
+  background-color: blue;
+}
+.btn-outline--success {
+  color: #33cc99;
+  border: .125rem solid #33cc99;
+}
+.btn-outline--success:hover {
+  color: white;
+  background-color: #70dbb8;
+}
+.btn-outline--warning {
+  color: orange;
+  border: .125rem solid orange;
+}
+.btn-outline--warning:hover {
+  color: white;
+  background-color: orange;
+}
+.btn-outline--danger {
+  color: red;
+  border: .125rem solid red;
+}
+.btn-outline--danger:hover {
+  color: white;
+  background-color: red;
+}
+.btn-outline--info {
+  color: #cdecff;
+  border: .125rem solid #cdecff;
+}
+.btn-outline--info:hover {
+  color: white;
+  background-color: #cdecff;
+}
+.btn-outline--light {
+  color: black;
+  border: .125rem #EEEEEE;
+}
+.btn-outline--light:hover {
+  color: black;
+  background-color: white;
+}
+.btn-outline--dark {
+  color: black;
+  border: .125rem solid black;
+}
+.btn-outline--dark:hover {
+  color: white;
+  background-color: black;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+/* Notices
+ *  Default Kramdown usage (no indents!):
+ *  <div class="notice" markdown="1">
+ *  #### Headline for the Notice
+ *  Text for the notice
+ *  </div>
+ */
+
+ .notice {
+  background-color: white;
+  margin: 2em 0 !important;  /* override*/
+  padding: 1em;
+  font-family: monospace;
+  font-size: 1.25rem;
+  text-indent: initial; /* override*/
+  border-radius: $border-radius;
+  box-shadow: 0 1px 12px #cccccc;
+ }
+
+  .notice--primary {
+     color: #33cc99;
+     border: .125rem solid #33cc99;
+}
+
+.notice--secondary {
+ color: #cccccc;
+ background-color: blue;
+}
+
+.notice--success {
+ background-color: #33cc99;
+}
+
+.notice--warning {
+ background-color: orange;
+}
+
+.notice--danger {
+ background-color: red;
+}
+
+.notice--info {
+ background-color: #cdecff;
+}
+
+.notice--dark {
+  color: #cccccc;
+  background-color: black;
+}
+
+
+/* Full screen width */
+.full {
+  width: 100vw;
+  position: relative;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+
+body span a {
+  font-weight: 300;
+  color: light-gray;
+}
+body span a:hover {
+  color: light-gray;
+}
+
+hr {
+  max-width: 100%;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #FF6F61;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+dd {
+  margin-left: 1rem;
+}
+
+abbr[title] {
+  cursor: help;
+  text-decoration: none;
+  border-bottom: 1px dotted gray;
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+mark {
+  background-color: #aaffe3;
+}
+
+/* Image captions */
+figcaption {
+  font-family: serif;
+  font-size: .875rem;
+  font-style: italic;
+  font-weight: 300;
+  color: silver;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table thead {
+  background-color: #F4F4F4;
+}
+
+table, th, td {
+  padding: .5rem;
+  border: 1px solid #F4F4F4;
+}
+
+/* Blockquotes */
+blockquote {
+  font-family: athelas;
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.5;
+  padding-left: 1rem;
+  margin: 4rem 0 4rem 0;
+  color: black;
+  border-left: .25rem solid #FF6F61;
+}
+
+blockquote cite {
+  font-size: .875rem;
+  font-style: normal;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+/* Checklists */
+
+.task-list {
+  list-style-type: none;
+}
+
+.task-list-item-checkbox {
+  margin-right: 10px;
+}
+
+/* Footnotes */
+.footnotes {
+  font-size: .875rem;
+  color: black-80;
+}
+
+a.reversefootnote {
+  color: #FF6F61;
+  text-decoration: none;
+}
+
+a.reversefootnote:hover {
+    color: #FF6F61;
+}
+
+/* Override Tachyons */
+
+:root {
+--red:  #FF6F61;
+--light-red:  #FFCCCC;
+}
+
+figure {
+margin: .25rem 0; /* Removes Tachyons default 40px left/right margins on codeblocks */
+}
+
+/* */
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+#bg img {
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+#container {
+  margin: 20px auto;
+  max-width: 600px;
+  width: 60%;
+  min-width: 260px;
+  margin: 10px auto 0 auto;
+  text-align: left;
+  position: relative;
+  padding: 25px;
+  background: transparent url(img/#black50.png);
+  background: rgba(255,255,255,0.24) none;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+/* Codeblocks */
+
+/* Literal.Number.Integer.Long */
+code, pre {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  overflow: auto; }
+  @media (--breakpoint-medium) {
+    code {
+      padding: 1em 0.2em; } }
+
+pre {
+  margin: 0;
+  padding: 1rem;
+}
+
+p > code {
+  border-right: .25rem;
+  display: inline;
+  padding: .25rem;
+  background-color: #F4F4F4;
+}
+
+/* Hightlight code — Thankful_Eyes style */
+
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight {
+  color: #faf6e4;
+  background-color: #122b3b;
+}
+.highlight .gl {
+  color: #dee5e7;
+  background-color: #4e5d62;
+}
+.highlight .gp {
+  color: #a8e1fe;
+  font-weight: bold;
+}
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #6c8b9f;
+  font-style: italic;
+}
+.highlight .cp {
+  color: #b2fd6d;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .err {
+  color: #fefeec;
+  background-color: #cc0000;
+}
+.highlight .gr {
+  color: #cc0000;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .k, .highlight .kd, .highlight .kv {
+  color: #f6dd62;
+  font-weight: bold;
+}
+.highlight .o, .highlight .ow {
+  color: #4df4ff;
+  font-weight: bold;
+}
+.highlight .p, .highlight .pi {
+  color: #4df4ff;
+}
+.highlight .gd {
+  color: #cc0000;
+}
+.highlight .gi {
+  color: #b2fd6d;
+}
+.highlight .ge {
+  font-style: italic;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .gt {
+  color: #dee5e7;
+  background-color: #4e5d62;
+}
+.highlight .kc {
+  color: #f696db;
+  font-weight: bold;
+}
+.highlight .kn {
+  color: #ffb000;
+  font-weight: bold;
+}
+.highlight .kp {
+  color: #ffb000;
+  font-weight: bold;
+}
+.highlight .kr {
+  color: #ffb000;
+  font-weight: bold;
+}
+.highlight .gh {
+  color: #ffb000;
+  font-weight: bold;
+}
+.highlight .gu {
+  color: #ffb000;
+  font-weight: bold;
+}
+.highlight .kt {
+  color: #b2fd6d;
+  font-weight: bold;
+}
+.highlight .no {
+  color: #b2fd6d;
+  font-weight: bold;
+}
+.highlight .nc {
+  color: #b2fd6d;
+  font-weight: bold;
+}
+.highlight .nd {
+  color: #b2fd6d;
+  font-weight: bold;
+}
+.highlight .nn {
+  color: #b2fd6d;
+  font-weight: bold;
+}
+.highlight .bp {
+  color: #b2fd6d;
+  font-weight: bold;
+}
+.highlight .ne {
+  color: #b2fd6d;
+  font-weight: bold;
+}
+.highlight .nl {
+  color: #ffb000;
+  font-weight: bold;
+}
+.highlight .nt {
+  color: #ffb000;
+  font-weight: bold;
+}
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #f696db;
+  font-weight: bold;
+}
+.highlight .ld {
+  color: #f696db;
+  font-weight: bold;
+}
+.highlight .ss {
+  color: #f696db;
+  font-weight: bold;
+}
+.highlight .s, .highlight .sb, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .sr, .highlight .s1 {
+  color: #fff0a6;
+  font-weight: bold;
+}
+.highlight .se {
+  color: #4df4ff;
+  font-weight: bold;
+}
+.highlight .sc {
+  color: #4df4ff;
+  font-weight: bold;
+}
+.highlight .si {
+  color: #4df4ff;
+  font-weight: bold;
+}
+.highlight .nb {
+  font-weight: bold;
+}
+.highlight .ni {
+  color: #999999;
+  font-weight: bold;
+}
+.highlight .w {
+  color: #BBBBBB;
+}
+.highlight .go {
+  color: #BBBBBB;
+}
+.highlight .nf {
+  color: #a8e1fe;
+}
+.highlight .py {
+  color: #a8e1fe;
+}
+.highlight .na {
+  color: #a8e1fe;
+}
+.highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi {
+  color: #a8e1fe;
+  font-weight: bold;
+}

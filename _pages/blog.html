@@ -1,0 +1,28 @@
+---
+title: Blog
+subtitle: articles & tutorials
+permalink: /blog/
+hero: Blog
+layout: default
+---
+
+<section class="cf ph3 ph6-ns pv5">
+  <article class="mw9-l f4-ns sans-serif">
+  <!-- This is where the title: in your front matter gets dropped in. -->
+ {% include site-search.html %}
+ <hr class="bt bw2 b--black-10"></hr>
+  <div class="fl w-100 pa2 pr4-ns">
+  <ul class="list pl0">
+    {% for post in site.posts %}
+      <li class="pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+        <a href="{{ post.url }}" class="f3 link no-underline link red hover-light-red avenir" title="{{post.title}}">
+          {{ post.title }}
+          <div class="">
+          <time datetime="{{post.date}}" class="f6 lh-copy measure-wide mt0-ns link no-underline right black-30 avenir">{{ post.date | date_to_long_string }}</date>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+</article>
+</section>

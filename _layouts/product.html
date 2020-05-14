@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="content content pa3 ph6-l">
+	<section class="page measure-wide f5 f4-ns lh-copy avenir">
+			<div itemscope itemtype="http://schema.org/Product" class="product-container {% if page.full_width %}max-container{% endif %}">
+
+						{{ content }}
+			</div>
+
+				{% include product-styles.html product=page %}
+				<div itemscope itemtype="http://schema.org/Offer" class="w-100 w-50ns product-details measure-wide lh-copy f5 f4-ns helvetica black-60" id="add">
+
+					<h4 itemprop="itemOffered">Software: {{ page.software }}</h4>
+
+					{% if page.format %}
+					<h5>Format: {{ page.format }}</h5>
+					{% endif %}
+
+					{% if page.ratio %}
+					<h5>Film Ratio: {{ page.ratio }}</h5>
+					{% endif %}
+
+<span itemprop="description">
+					{{ page.description_markdown | markdownify }}
+</span>
+					<h4 itemprop="priceCurrency" content="USD"></span>$ <span itemprop="price" content="{{ page.price }}">{{ page.price }}</h4>
+
+		</div>
+	</section>
+</div>

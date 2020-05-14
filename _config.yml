@@ -1,0 +1,103 @@
+# This will be the first part of the title tag for your site <title> site.name + page.title </title>
+title: Supply
+url: "https://templates.supply"
+baseurl:
+google_analytics_key:
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+tagline: 
+description: Jekyll template for e-commerce with Gumroad integration
+author:
+  name: Supply
+  email:
+  twitter: TemplatesSupply # twitter username without the @ symbol
+  phone: ""
+social:
+  name: Templates Supply # replace this
+  links:
+    - https://github.com/YJPL/supply
+
+# Build
+timezone: FR
+
+collections:
+  products:
+    _hide_content: false
+    output: true
+
+permalink: /:title/ # pretty
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "product"
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "index.html"
+    values:
+      layout: "default"
+
+jekyll-archives:
+  enabled:
+    - categories
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-leaflet
+  - jekyll-feed
+  - jekyll-archives # not on Supply theme
+
+include:
+  - .htaccess
+  - _pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+# Contact settings
+formcarry: https://formcarry.com/ # add you formcarry endpoint url (see https://formcarry.com/documentation/getting-started)
+
+# Social
+
+social_icons:
+  - Email
+  - Facebook
+  - Google Plus
+  - Instagram
+  - LinkedIn
+  - Pinterest
+  - Tumblr
+  - Twitter
+  - YouTube
+  - RSS
+
+feed:
+  collections:
+    products:
+      path: "/products.xml"
+
+# Jekyll Archives Settings https://github.com/jekyll/jekyll-archives
+jekyll-archives:
+  enabled: 'all'
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/:name/'
+  category_archive:
+    type: liquid

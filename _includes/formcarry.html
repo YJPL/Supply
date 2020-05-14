@@ -1,0 +1,30 @@
+<form id="form" class="form black-80" action="{{ site.formcarry }}" method="POST">
+  <div class="form__subcontainer">
+    <div>
+      <label class="db fw4 lh-copy f6" for="form-first-name">First Name</label>
+      <input type="text" name="first-name" id="form-first-name" required>
+    </div>
+    <div>
+      <label class="db fw4 lh-copy f6" for="form-last-name">Last Name</label>
+      <input type="text" name="last-name" id="form-last-name" required>
+    </div>
+  </div>
+
+  <div>
+    <label class="db fw4 lh-copy f6" for="form-email">E-Mail</label>
+    <input type="email" name="email" id="form-email" required>
+  </div>
+
+  <div>
+    <label class="db fw4 lh-copy f6" for="form-message">Message</label>
+    <textarea name="message" id="form-message" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2"  rows="3"></textarea>
+  </div>
+
+  <div class="form__submit">
+    <div class="form__btn">
+      <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6" type="submit" value="Send">
+    </div>
+  </div>
+
+  <p class="form__message"></p>
+</form>

@@ -1,0 +1,61 @@
+---
+title: How to use Jekyll
+layout: post
+description_markdown: >-
+  Start a blog or a static website with Jekyll.
+date: 2020-04-16 12:48:59 +0100
+categories: [Jekyll, tutorial]
+---
+## Start a blog or a static site with Jekyll.
+Jekyll is “an open-source simple static site generator”. In other words, Jekyll converts plain text files from a computer into a website or blog.
+
+
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `bundle exec jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+
+To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+
+Jekyll also offers powerful support for code snippets:
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+[jekyll-docs]: http://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
+
+***
+
+## Using Jekyll with Supply theme
+Supply is designed to sell products through [Gumroad](https://gumroad.com), but you can use the theme for a regular blog or just pick .
+
+### Gulp commands with browser reload
+In addition to regular Jekyll commands, Supply lets you use Gulp to build and preview your site.
+
+In the terminal, simply run
+
+~~~bash
+gulp build
+~~~
+
+to build your site concatenate your css (in `asset` -> `css`)
+
+
+Use
+
+
+~~~bash
+gulp watch
+~~~
+
+This command builds the site locally on port 3000, with [Browsersync](https://www.browsersync.io) so you can quickly revise design changes.
+
+Preview your site with browser reload at: [localhost:3000](http://localhost:3000).
+
+Use the address [localhost:3001](http://localhost:3001) for additional help like grid preview, css highlight and more during development.

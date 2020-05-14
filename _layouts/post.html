@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="content pa3 ph6-l">
+	<section class="page measure-wide f5 f4-ns lh-copy avenir">
+		<div class="container {% if page.full_width %}max-container{% endif %}">
+			{{ content }}
+
+			{% if site.data.theme.category_tag_list %}
+      {% include category_tag_list.html %}
+      {% endif %}
+
+		</div>
+	</section>
+	{% include post_pagination.html %}
+</div>

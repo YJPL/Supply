@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<section class="w-100 border-box pa3 ph6-l">
+  <article class="mw9-l f4-ns sans-serif">
+    <h1 class="f3 fw4 lh-title mb0 pb2 bb b--light-gray avenir">{% if page.type == 'year' %}Posts from {{ page.date | date: "%Y" }}{% elsif page.type == 'month' %}Posts from {{ page.date | date: "%B %Y" }}{% elsif page.type == 'day' %}Posts from {{ page.date | date: site.date_format }}{% else %}Posts in {{ page.type }} '{{ page.title }}'{% endif %}</h1>
+
+    {% for post in page.posts %}
+    <a class="link black-80 hover-silver" href="{{ post.url | relative_url }}">
+      <article class="f5 lh-copy fw3 pb4 bb b--light-gray avenir">
+        <div class="f6 fw6 lh-title ttu tracked mv4"><time>{{ post.date | date: "%b %Y" }}</time></div>
+        <h3 class="f2 fw6 lh-title mb0">{{ post.title | escape }}</h3>
+        <p class="f5 fw3 lh-copy mv2">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+
+        <div class="f6 fw3 silver mt0">
+          {% if post.last_modified_at %}
+          <span>{{ site.data.theme.text.updated }} <time>{{ post.last_modified_at | date: site.date_format }}</time></span>
+          {% else %}
+          <time>{{ post.date | date: site.date_format }}</time>
+          {% endif %}
+
+        </div>
+      </article>
+    </a>
+    {% endfor %}
+
+  </article>
+</section>

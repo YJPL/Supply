@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content=
+"width=device-width, initial-scale=1" />
+
+		{% seo %}
+
+<link rel="stylesheet" href="/assets/css/sup-tachyons.min.css" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff6f61" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="theme-color" content="#ffffff" />
+</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="company-name db dt-l w-100 border-box pa3 ph6-l"></div>
+				{% include navigation.html %}
+			</div>
+
+			<section class="hero pv3 ph3 ph6-ns w-100">
+				<div class="text-container ">
+					{% if page.hero %}
+						<h2 itemprop="name" class="f1 lh-title helvetica">{{ page.hero }}</h2>
+
+					{% elsif page.title %}
+						<h2 itemprop="name" class="f1 lh-title helvetica">{{ page.title }}</h2>
+					{% endif %}
+
+					{% if page.subtitle %}
+
+						<h3 class="f3 lh-title helvetica">{{ page.subtitle }}</h3>
+					{% endif %}
+					</div>
+			</section>
+		</header>
+
+		<div class="">
+
+		{{ content }}
+
+	</div>
+
+		<footer>
+			<div class="container mw9 center bg-near-white pv4 ph3 ph5-m ph6-l mid-gray avenir">
+				<ul class="footer-columns list pl0 cf ph0-ns">
+					<li class="about list pl0 fl w-100 w-40-l pa2">
+						<h4>SUPPLY</h4>
+
+						<ul class="list pl0 lh-copy measure-narrow">Supply is an e-commerce theme for Jekyll with Gumroad integration.</ul>
+					</li>
+
+
+					<li class="footer-nav fl w-100 w-20-l pa2">
+						<h4>General</h4>
+						<ul class="list pl0 lh-copy">
+							<li><a href="/">Products</a></li>
+							<li><a href="/about/">About</a></li>
+							<li><a href="/blog/">Blog</a></li>
+						</ul>
+					</li>
+
+					<li class="footer-nav fl w-100 w-20-l pa2">
+						<h4>Help</h4>
+						<ul class="list pl0 lh-copy">
+							<li><a href="/support/">Support</a></li>
+							<li><a href="/privacy/">Privacy</a></li>
+							<li><a href="/tutorial/">Tutorials</a></li>
+						</ul>
+					</li>
+
+					<li class="footer-nav fl w-100 w-20-l pa2">
+						<h4>Contact</h4>
+						<ul class="list pl0 lh-copy">
+						<li>Need help with something?</li>
+						<li><a href="/contact/">Get in touch</a>.</li>
+						</br>
+						<div class="social-icons">
+							<a class="facebook dim" href="https://www.facebook.com/TemplatesSupply/">{% include social-icon.html icon="Facebook" %}</a>
+							<a class="twitter dim" href="https://twitter.com/TemplatesSupply/">{% include social-icon.html icon="Twitter" %}</a>
+							<a class="pinterest dim" href="https://www.pinterest.com/TemplatesSupply/">{% include social-icon.html icon="Pinterest" %}</a>
+							<a class="Instagram dim" href="https://www.instagram.com/templatessupply/">{% include social-icon.html icon="Instagram" %}</a>
+							<a class="linkedin dim" href="https://www.linkedin.com/company/templates-supply/">{% include social-icon.html icon="LinkedIn" %}</a>
+							<a class="RSS dim" href="/templates.xml">{% include social-icon.html icon="RSS" %}</a>
+						</div>
+						</ul>
+					</li>
+				</ul>
+				<p class="copyright black-40 f7 f6 tc-l">All Rights Reserved &copy; {{ site.time | date: '%Y' }} {{ site.title }}, Inc. Theme design by <a href="https://alternatyves.com">alternatyves</a></p>
+			</div>
+		</footer>
+	</body>
+</html>

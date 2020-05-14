@@ -1,0 +1,21 @@
+---
+title: Contact
+description: Get in touch
+permalink: /contact/
+email:
+hero: Get in touch
+map-id:
+  lat: 41.881832
+  long: -87.623177
+  address: 'Brussels, Belgium'
+  zoom: 16
+  popup-title: "Supply"
+  popup-text: ""
+---
+{% include formcarry.html %}
+
+{% leaflet_map %}
+    {% leaflet_marker { "latitude" : 41.881832,
+                       "longitude" : -87.623177,
+                       "popupContent" : "Hello World from Chicago!"} %}
+{% endleaflet_map %}

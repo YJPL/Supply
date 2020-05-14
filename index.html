@@ -1,0 +1,38 @@
+---
+title: Supply
+hero: Supply is a Jekyll theme for Gumroad creators.
+subtitle: An open source e-commerce template for Jekyll + Gumroad.
+---
+
+<div itemscope itemtype="http://schema.org/ItemList" class="content" id="products">
+	<section class="cf pb5 ph6-ns ph2">
+		<div class="container flex-wrap flex">
+
+				{% for product in site.products reversed %}
+
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/Product" class="product-list w-100 w-50-m ph2-m w-third-l ph3">
+
+						<div itemprop="image" class="style aspect-ratio aspect-ratio--1x1" >
+							<a href="{{ product.url }}" style="background-image:url({{ product.image }});"
+						class="db bg-center cover aspect-ratio--object" /><h4 class="f4 helvetica bg-light-green no-underline white shadow-2 grow pa2 pv3 dib mr3">$ {{ product.price }}</h4>
+							</a>
+						</div>
+
+						<article itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer" class="product-details dib v-mid lh-copy avenir">
+							<h3 itemprop="itemOffered"><a class="f5 f4-ns mb0 link black-90 link dim avenir" href="{{ product.url }}"><span itemprop="name">{{ product.title }}</span></a></h3>
+							<h4 itemprop="itemOffered">Category: {{ product.cat }}</h4>
+
+							<div itemprop="description" class="product-description f6 f5 fw4 mt1 black-60 pb4">
+								{{ product.description_markdown | truncate: 92 | markdownify }}
+							</div>
+
+						</article>
+
+				</div>
+				{% endfor %}
+
+		</div>
+
+		<div class="pa3">{% include site-search.html %}</div>
+	</section>
+</div>

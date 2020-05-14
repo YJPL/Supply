@@ -1,0 +1,59 @@
+{
+  "name": "supply",
+  "version": "1.0.0",
+  "description": "Supply, an e-commere theme built with Jekyll and Gumroad",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YJPL/supply/",
+    "scripts": {
+      "gulp": "gulp"
+    }
+  },
+  "keywords": [
+    "css",
+    "e-commerce",
+    "Jekyll",
+    "Gumroad",
+    "oocss",
+    "supply"
+  ],
+  "author": "YJPL",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YJPL/supply/issues"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-size": "^3.0.0",
+    "immutable-css-cli": "^1.1.1",
+    "watch": "^1.0.2"
+  },
+  "contributors": [
+    {
+      "name": "YJPL",
+      "email": ""
+    }
+  ],
+  "scripts": {
+    "start": "npm run build:watch",
+    "mutations": "immutable-css src/sup-tachyons.css --strict",
+    "build": "npm run build:css && npm run build:minify",
+    "build:css": "tachyons src/sup-tachyons.css > assets/css/sup-tachyons.css",
+    "build:minify": "tachyons src/sup-tachyons.css --minify > assets/css/sup-tachyons.min.css",
+    "build:watch": "watch \"npm run build\" ./src/"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp-basswork": "^0.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-rename": "^2.0.0"
+  }
+}

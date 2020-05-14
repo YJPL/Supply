@@ -1,0 +1,14 @@
+<section class="styles">
+	{% for product in site.product %}
+		<div class="style aspect-ratio aspect-ratio--1x1" >
+			<a class="db bg-center cover aspect-ratio--object" href="{{ product.url }}" style="background-image:url({{ product.image }});"</a>
+
+		</div>
+	{% endfor %}
+
+	<div class="style-picker">
+		{% for style in include.product.styles %}
+			<div style="background-color: {{ style.color }}" data-item-id="{{ forloop.index }}"></div>
+		{% endfor %}
+	</div>
+</section>

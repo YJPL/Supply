@@ -1,0 +1,7 @@
+# UI Default Settings
+category_tag_list : true # Show post categories & tags
+
+# UI Default Text
+text:
+    # Post Settings
+    updated           : Updated

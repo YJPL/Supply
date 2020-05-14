@@ -1,0 +1,15 @@
+<nav role="navigation" class="db dt-l w-100 border-box pa3 ph6-l tc tl-l mb2 mb0-l">
+ <a class="db dtc-l v-mid mid-gray link grow w-100 w-25-l tc tl-l mb2 mb0-l f4 f3 b ttu tracked helvetica" href="{{ site.baseurl }}/" title="Supply Home">SUPPLY</a>
+	{% for link in site.data.navigation %}
+		{% assign class = "db dtc-l v-mid w-100 w-75-l tc tr-l sans-serif" %}
+		{% if link.highlight %}
+			{% assign class = class | append: " highlight" %}
+		{% endif %}
+
+		{% if link.link == page.url %}
+			{% assign class = class | append: " link f6 f5-l ba b--solid ph3 pv2 mb2 mt2-ns mt3 dib dim red grow" %}
+		{% endif %}
+		<a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l helvetica" href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
+	{% endfor %}
+    <a class="pv3 ph0 dib h2 w2" href="#" title="payment secured by Gumroad">{% include Gumroad-secured.html %}</a>
+</nav>

@@ -1,0 +1,21 @@
+<nav role="navigation" class="db dt-l w-100 border-box pa3 tc tl-l mb2 mb0-l">
+  {% if page.category_tag_list != false %}
+  <div class="flex flex-row justify-start flex-wrap list mb2">
+    {% if post %}
+      {% assign categories = post.categories %}
+      {% assign tags = post.tags %}
+    {% else %}
+      {% assign categories = page.categories %}
+      {% assign tags = page.tags %}
+    {% endif %}
+
+    {% for category in categories %}
+      <a class="f6 br1 mt2 mr1 pa2 link black-60 hover-red bg-near-white hover-bg-black-80" href="{{ "/" }}{{ category | slugify }}/">{{ category }}</a>
+    {% endfor %}
+
+    {% for tag in tags %}
+      <a class="f6 br1 mt2 mr1 pa2 link black-60 hover-light-green bg-near-white hover-bg-black-80" href="{{ "/tag/" }}{{ tag | slugify }}/">{{ tag }}</a>
+    {% endfor %}
+
+  </div>
+  {% endif %}
