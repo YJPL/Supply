@@ -1,10 +1,11 @@
 ## Supply, a Jekyll theme
-Supply is an e-commerce template for [Jekyll](https://jekyllrb.com/) + [Gumroad](https://gumroad.com), designed by [alternatyves](https://alternatyves.com/).
+Supply is an e-commerce template for [Jekyll](https://jekyllrb.com/) + [Gumroad](https://gumroad.com), designed with [Tachyons CSS](https://github.com/tachyons-css/tachyons) by [alternatyves](https://alternatyves.com/).
+
 If you are a Gumroad creator, you can use Supply with Jekyll to display products within your site or blog.
 
 [Demo Site with documentation](https://supply.templates.supply)
 
-Browse through a [live demo](https://templates.supply).
+Browse through a [live demo](https://templates.supply) 👉(https://templates.supply).
 
 ![Supply template screenshot](/images/templates/jekyll/Supply-temp.png)
 
