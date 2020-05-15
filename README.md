@@ -2,6 +2,8 @@
 Supply is an e-commerce template for [Jekyll](https://jekyllrb.com/) + [Gumroad](https://gumroad.com), designed by [alternatyves](https://alternatyves.com/).
 If you are a Gumroad creator, you can use Supply with Jekyll to display products within your site or blog.
 
+[Demo Site with documentation](https://supply.templates.supply)
+
 Browse through a [live demo](https://templates.supply).
 
 ![Supply template screenshot](/images/templates/jekyll/Supply-temp.png)
@@ -126,4 +128,9 @@ to get a product display like this:
 
 ## Open source
 
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/YJPL/Supply/pulls)
+
 Please use and [contribute to *Supply* ](https://github.com/YJPL/Supply/pulls).
+
+
+
