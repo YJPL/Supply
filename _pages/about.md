@@ -10,7 +10,7 @@ If you are a Gumroad creator, you can use Supply with Jekyll to display products
 
 [Supply Code on GitHub](https://github.com/YJPL/Supply/){: .btn .btn-outline--secondary }
 
-[Demo Site](/){: .btn .btn-outline--info }
+[Demo Site with documentation](/){: .btn .btn-outline--info }
 
 [Templates Supply](https://templates.supply){: .btn .btn-outline--success }
 
