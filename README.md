@@ -5,7 +5,7 @@ If you are a Gumroad creator, you can use Supply with Jekyll to display products
 
 [Demo Site with documentation](https://supply.templates.supply)
 
-Browse through a [live demo](https://templates.supply) 👉(https://templates.supply).
+Browse through a live demo: [https://templates.supply](https://templates.supply).
 
 ![Supply template screenshot](/images/templates/jekyll/Supply-temp.png)
 
