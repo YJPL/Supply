@@ -49,7 +49,7 @@ Install the dependencies with [Bundler](http://bundler.io/):
 $ bundle install
 ~~~
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+Run Jekyll commands through Bundler to ensure you're using the right versions:
 
 ~~~bash
 $ bundle exec jekyll serve
@@ -139,7 +139,7 @@ to get a product display like this:
 
 {% include gumroad-overlay.html id="supply" %}
 
-## Open source
+## Open-source
 
 
 [Get Supply](https://github.com/YJPL/Supply/archive/master.zip){: .btn .btn-outline--secondary }

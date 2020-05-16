@@ -4,12 +4,13 @@ layout: post
 description_markdown: >-
   Built-in site search functionality.
 date: 2020-04-24 12:48:49 +0100
+last_modified_at: 2020-05-16
 image:
 categories: [Jekyll, tutorial, search]
 ---
 ## Built-in site search functionality
 
-Supply theme has **search** backed in within the site, which will prompt pages relevant to a given inquiry. To add search to a post or a page, you can simply add an include:
+The Supply theme has **search** baked in to prompt the pages relevant to any given inquiry. To display a search box on a post or a page, you need to add one line of code. This snippet
 
 ```liquid
 {% raw %}{% include site-search.html %}{% endraw %}

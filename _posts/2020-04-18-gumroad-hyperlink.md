@@ -2,17 +2,17 @@
 title: Gumroad hyperlink
 layout: post
 description_markdown: >-
-  Using a simple Gumroad hyperlink with Supply.
+  How to use a simple Gumroad hyperlink with Supply.
 date: 2020-04-23 12:48:59 +0100
 categories: [Jekyll, tutorial, Gumroad]
 tags: [hyperlink]
 ---
-Sometimes all you need is a [simple hyperlink](https://gum.co/soon-jekyll) to your product on Gumroad.
+Sometimes all you want is a [simple hyperlink](https://gum.co/soon-jekyll) to your product on Gumroad.
 {% include gumroad-link.html id="soon-jekyll" %}
 
-First, write your hyperlink in Markdown, as you'd normally do.
+To do this, first, write your hyperlink in Markdown, as you’d normally do.
 
-In this example, we have
+In this example, we write
 
 ``` markdown
 {% raw %}[simple hyperlink](https://gum.co/soon-jekyll){% endraw %}
@@ -24,7 +24,8 @@ then add this include
 {% raw %}{% include gumroad-link.html id="soon-jekyll" %}{% endraw %}
 ```
 
-Now we have a [simple hyperlink](https://gum.co/soon-jekyll) with a Gumroad overlay.
+And the result is a [simple hyperlink](https://gum.co/soon-jekyll) with a Gumroad overlay.
+(click on the link to check the product overlay)
 
 ## Related file:
 
