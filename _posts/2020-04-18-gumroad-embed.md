@@ -1,8 +1,8 @@
 ---
-title: Use Gumroad Embed
+title: Gumroad Embed
 layout: post
 description_markdown: >-
-  Built-in site search functionality.
+  How to use Gumroad embed code snippets with Supply.
 date: 2020-04-23 12:48:59 +0100
 image:
 categories: [Jekyll, tutorial, Gumroad]
@@ -10,51 +10,31 @@ tags: [embed]
 ---
 You'll find Gumroad integration snippets in `_includes`.
 There are two ways to post a Gumroad product on your site: embed or overlay.
-On this post we will look how to use the embed method.
+In this post, we will look at how to use the embed method.
 
 ## Gumroad embed
+You can easily embed a product from Gumroad within your site or page.
 
-Let's start with a Gumroad link to a product: [https://gum.co/soon-jekyll](https://gum.co/soon-jekyll){: .pink .hover-light-pink}
+Suppose we have a Gumroad product: [https://gum.co/supply](https://gum.co/supply){: .pink .hover-light-pink}
 
-Now this snippet:
+To embed this product, we need to add a short include with the product id to our page or post.
+In this example, the ID is `supply`, so we add this include with that:
 
 ```liquid
-{% raw %}{% include gumroad-embed.html id="soon-jekyll" %}{% endraw %}
-```
-will output the link to our product:
-
-{% include gumroad-embed.html id="soon-jekyll" %}
-
-If you click on it, you'll get to that product page on Gumroad.
-
-Now, it would be a lot nicer if we had an actual product image linking to Gumroad overlay, right?
-Let's write this above our include liquid snippet:
-
-```html
-{% raw %}<a href="https://gum.co/soon-jekyll" class=""><img class="w-100" src="/images/templates/jekyll/Soon_Jekyll-template-sample.png"></a>{% endraw %}
+{% raw %}{% include gumroad-embed.html id="supply" %}{% endraw %}
 ```
 
 ```liquid
-{% raw %}{% include gumroad-embed.html id="soon-jekyll" %}{% endraw %}
+{% raw %}{% include gumroad-embed.html id="supply" %}{% endraw %}
 ```
 
-Note that you can add class to style your html and image according to your site styling and layout.
-{: .notice}
+That will output the product directly on your page:
 
-That will output the following:
+{% include gumroad-embed.html id="supply" %}
 
-<a href="https://gum.co/soon-jekyll" class="no-underline pv2 grow db"><img class="w-100" src="/images/templates/jekyll/Soon_Jekyll-template-sample.png"></a>
-{% include gumroad-embed.html id="strip" %}
-
-It now looks much better.
-
-Clicking on the image or button will link to a new page: the embed code takes the visitor to the Gumroad product page.
-
-Don't forget to add your custom ```text-button```copy in your page front matter.
+> If you have an SSL Certificate set up, the buying process is completely inline. If your site is not secured with HTTPS, you can redirect customers to the payment form in a new, secured tab.
+—[GUMROAD Documentation](https://help.gumroad.com/article/44-build-gumroad-into-your-website)
 
 ## Related files:
 
 `gumroad-embed.html` in `_includes`
-
-You can also include your product Gumroad ID in your post or page front-matter if you prefer.
-{: .notice}
