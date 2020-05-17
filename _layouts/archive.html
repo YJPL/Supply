@@ -7,7 +7,7 @@ layout: default
 
     {% for post in page.posts %}
     <a class="link black-80 hover-silver" href="{{ post.url | relative_url }}">
-      <article class="f5 lh-copy fw3 pb4 bb b--light-gray avenir">
+      <article class="f5 lh-copy fw3 pb4 bb b--light-gray measure-wide avenir">
         <div class="f6 fw6 lh-title ttu tracked mv4"><time>{{ post.date | date: "%b %Y" }}</time></div>
         <h3 class="f2 fw6 lh-title mb0">{{ post.title | escape }}</h3>
         <p class="f5 fw3 lh-copy mv2">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
