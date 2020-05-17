@@ -3,7 +3,7 @@ title: How to add a product page
 layout: post
 description_markdown: >-
   How-to create a new product page in your products collection.
-date: 2020-04-16 12:48:59 +0100
+date: 2020-04-22 12:48:59 +0100
 categories: [Jekyll, tutorial, Gumroad]
 tags: [front matter, product, page, customization]
 ---

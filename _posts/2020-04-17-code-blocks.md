@@ -1,8 +1,7 @@
 ---
 title: Post with code blocks
 layout: post
-date: 2020-04-24 10:48:48 +0100
-last_modified_at: 2020-05-05
+date: 2020-04-17 10:48:48 +0100
 description_markdown: >-
   Start a blog or a static site with Jekyll.
 image: /images/templates/assignments/assignments_tracker_spreadsheet.png

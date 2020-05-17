@@ -3,8 +3,7 @@ title: Site Search
 layout: post
 description_markdown: >-
   Built-in site search functionality.
-date: 2020-04-24 12:48:49 +0100
-last_modified_at: 2020-05-16
+date: 2020-04-21 12:48:49 +0100
 image:
 categories: [Jekyll, tutorial, search]
 ---
