@@ -132,3 +132,9 @@ to get a product display like this:
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/YJPL/Supply/pulls)
 
 Please use and [contribute to *Supply* ](https://github.com/YJPL/Supply/pulls).
+
+## Who is using this?
+
+- [x] [templates.supply](https://templates.supply)
+
+Are you using Soon? [Let me know!](https://github.com/YJPL/supply/edit/master/README.md)
