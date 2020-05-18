@@ -10,7 +10,7 @@ tags: [front matter, variable, customization]
 
 ## Jekyll collections front matter type
 
-[Supply]() is built with Jekyll, based on a collection called ```products```.
+[Supply](/) is a Jekyll theme for e-commerce, based on a collection called ```products```.
 
 This collection has its own custom front matter variable, or type, with different attributes.
 
