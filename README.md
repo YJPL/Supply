@@ -137,4 +137,4 @@ Please use and [contribute to *Supply* ](https://github.com/YJPL/Supply/pulls).
 
 - [x] [templates.supply](https://templates.supply)
 
-Are you using Soon? [Let me know!](https://github.com/YJPL/supply/edit/master/README.md)
+Are you using Supply? [Let me know!](https://github.com/YJPL/supply/edit/master/README.md)
