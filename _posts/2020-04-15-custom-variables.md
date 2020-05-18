@@ -14,10 +14,11 @@ tags: [front matter, variable, customization]
 
 This collection has its own custom front matter variable, or type, with different attributes.
 
-We can set our own front matter variables on top of the Jekyll defaults, that we can later access in Liquid.
+This post is about how you can write your front matter variables on top of the Jekyll defaults, that you can later access in Liquid.
 
 In our Supply sample case, one variable would be ```cat```, standing for categories, another could be ```software```,  ```price```, etc.
-You can use your own variable, like for instance ```apparel``` if you have T-shirt and hoodies designs,  ```prints```if you are selling prints, and so on.
+
+You can create variables of your own, like for instance ```apparel``` if you have T-shirt and hoodies designs,  ```prints```if you are selling prints, and so on.
 
 This is particularly useful for collections. For example, the front matter for one of our products post could look like this:
 
@@ -38,7 +39,7 @@ image: /images/templates/free-pdf-storyboards/Japanese_Anime_storyboard-template
 ---
 ```
 
-Now suppose we would like to browse only the ```Free``` items from the ```products``` collection, Liquid templating language makes this simple to do manually. First we need to write a page to sort the templates with the ```Free``` variable.
+Now suppose we would like to browse only the ```Free``` items from the ```products``` collection, Liquid templating language makes this simple to do manually. First, we need to write a page to sort the templates with the ```Free``` variable.
 
 {% highlight html linenos %}
 {% raw %}
@@ -91,7 +92,7 @@ See line 12:
 {% endraw%}
 ```
 
-And that's it, Liquid is pretty straightforward. We can now visit [free products pages](/free-products-samples/){: .b .light-green .hover-lightest-blue}.
+And that's it, Liquid is pretty straightforward. We can now visit the [free products page](/free-products-samples/){: .b .light-green .hover-lightest-blue}.
 
-With Tachyons it is easy to style your custom pages differently.
+With Tachyons, it is easy to style your custom pages differently.
 {: .notice}
