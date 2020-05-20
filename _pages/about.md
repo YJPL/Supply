@@ -78,6 +78,14 @@ If you have products on Gumroad, you can start adding product pages right away. 
 
 ## Develop
 
+### Building front-end assets: styles and scripts
+
+4. Install Node module dependencies:
+
+~~~bash
+npm install
+~~~
+
 ### Tachyons
 
 You can change the site styling using [Tachyons](http://tachyons.io), look for the CSS in the `sup-theme` file, located in the `src` folder.

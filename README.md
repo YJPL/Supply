@@ -1,4 +1,4 @@
-## Supply, an e-commerce Jekyll theme with Gumroad integration 
+## Supply, an e-commerce Jekyll theme with Gumroad integration
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d0fa21a2-19fa-45da-a77a-024c58295e7f/deploy-status)](https://app.netlify.com/sites/supply-demo/deploys)
 
@@ -70,6 +70,15 @@ If you have products on Gumroad, you can start adding product pages right away. 
 
 
 ## Develop
+
+### Building front-end assets: styles and scripts
+
+4. Install Node module dependencies:
+
+~~~bash
+npm install
+~~~
+
 
 ### Tachyons
 
