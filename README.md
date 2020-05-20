@@ -1,4 +1,4 @@
-## Supply, a Jekyll theme
+## Supply, an e-commerce Jekyll theme with Gumroad integration 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d0fa21a2-19fa-45da-a77a-024c58295e7f/deploy-status)](https://app.netlify.com/sites/supply-demo/deploys)
 
