@@ -84,7 +84,7 @@ layout: default
 {% endhighlight %}
 
 
-See line 12:
+See in [line 12](https://github.com/YJPL/Supply/blob/5b5dea526eb3b06db02c5738631d37826ad07de6/_pages/free-products.html#L12):
 
 ``` html
 {% raw %}
