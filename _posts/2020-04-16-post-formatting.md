@@ -7,8 +7,6 @@ date: 2020-04-16 12:48:59 +0100
 image: /images/templates/assignments/assignments_tracker_spreadsheet.png
 categories: [Jekyll, tutorial]
 ---
-
-
 ## Everything you need to format your posts
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
