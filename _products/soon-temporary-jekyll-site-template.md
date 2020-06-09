@@ -6,7 +6,7 @@ cat: web
 description_markdown: >-
   Soon, a "coming soon" Jekyll template page.
 date: 2020-04-23 11:48:06 +0100
-last_modified_at: 2020-05-09 12:24:17 +0100
+last_modified_at: '2020-05-09'
 id: soon-jekyll
 price: Free
 text-button: Let me try this!

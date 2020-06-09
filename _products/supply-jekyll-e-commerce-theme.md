@@ -6,7 +6,7 @@ cat: web
 description_markdown: >-
   Supply, an open-source e-commerce theme for Jekyll, powered by Gumroad.
 date: 2020-05-09 11:48:06 +0100
-last_modified_at: 2020-02-26 22:24:17 +0100
+last_modified_at: '2020-02-26'
 id: soon-jekyll
 price: Free
 text-button: I demand Supply!

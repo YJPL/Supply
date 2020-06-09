@@ -6,7 +6,7 @@ cat: [anime]
 description_markdown: >-
   Free Ghibli-style Anime storyboard template, 2 pages PDF, in Japanese, for 1.85:1 aspect ratio on A4 vertical.
 date: 2020-01-27 12:09:50 +0100
-last_modified_at: 2020-02-26 09:24:48 +0100
+last_modified_at: '2020-02-26'
 id:
 price: Free
 text-button: Cool! Give me this template, please!

@@ -6,7 +6,7 @@ cat: productivity
 description_markdown: >-
   A free spreadsheet template for Apple Numbers, to help you keeping track of your past and future invoices and clients payments.
 date: 2019-03-18 13:20:50 +0100
-last_modified_at: 2020-02-26 22:17:19 +0100
+last_modified_at: '2020-02-26'
 id: invoices-tracker
 price: Free
 text-button: This could be useful, can I get it?
