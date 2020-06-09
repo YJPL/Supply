@@ -2,7 +2,7 @@
   'use strict';
 
   if (self.fetch) {
-    return
+    return;
   }
 
   var support = {
@@ -11,9 +11,9 @@
     blob: 'FileReader' in self && 'Blob' in self && (function() {
       try {
         new Blob()
-        return true
+        return true;
       } catch(e) {
-        return false
+        return false;
       }
     })(),
     formData: 'FormData' in self,
