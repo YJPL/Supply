@@ -21,9 +21,6 @@ Browse through a [live demo](https://templates.supply).
 
 {% include gumroad-overlay.html id="supply" %}
 
-
-Supply was made by [alternatyves](https://alternatyves.com/).
-
 Find more [templates, themes and Jekyll tutorials](https://jekyllrb.com/resources/).
 
 ## Features
