@@ -142,6 +142,8 @@ to get a product display like this:
 
 Please use and [contribute to *Supply* ](https://github.com/YJPL/Supply/pulls).
 
+<iframe src="https://github.com/sponsors/YJPL/button" title="Sponsor YJPL" height="35" width="107" style="border: 0;"></iframe>
+
 ## Who is using this?
 
 - [x] [templates.supply](https://templates.supply)
