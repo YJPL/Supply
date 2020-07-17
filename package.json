@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "autoprefixer": "^9.8.5",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.10",
     "del": "^5.1.0",
     "gulp-basswork": "^0.2.0",
     "gulp-concat": "^2.6.1",
