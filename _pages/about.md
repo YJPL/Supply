@@ -64,7 +64,7 @@ Add your custom configuration in the ```_config``` file.
 * Set in the *Data* / *Navigation* section, look for ```navigation.yml``` in  ```_data```.
 
 ### Footer
-Look for ```default.html``` in ```_layouts``` to add your footer links.
+Look for ```footer.html``` in ```_includes``` to add and change your footer links.
 
 ### Contact Page
 To add you formcarry endpoint URL to `_config.yml`, you'll need a fromcarry account, please refer to [formcarry documentation](https://formcarry.com/documentation/getting-started)
@@ -146,8 +146,11 @@ to get a product display like this:
 
 ## Open-source
 
-
 [Get Supply](https://github.com/YJPL/Supply/archive/master.zip){: .btn .btn-outline--secondary }
+
+<iframe src="https://github.com/sponsors/YJPL/button" title="Sponsor YJPL" height="35" width="107" style="border: 0;"></iframe>
+
+<a href="https://www.buymeacoffee.com/alternatyves/" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
 Please use and contribute to [Supply on GitHub](https://github.com/YJPL/Supply/){: .b .blue .hover-light-blue}
 {: .notice}
