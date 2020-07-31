@@ -48,8 +48,8 @@
     "build:watch": "watch \"npm run build\" ./src/"
   },
   "dependencies": {
-    "autoprefixer": "^9.8.5",
-    "browser-sync": "^2.26.10",
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.26.12",
     "del": "^5.1.0",
     "gulp-basswork": "^0.2.0",
     "gulp-concat": "^2.6.1",
