@@ -39,7 +39,7 @@ Exposed as a data file to give clients better access
 Set in the *Data* / *Navigation* section, look for ```navigation.yml``` in  ```_data```.
 
 ### Footer
-Look for ```default.html``` in ```_layouts``` to add your footer links.
+Look for ```footer.html``` in ```_includes``` to add and change your footer links.
 
 ### Contact Page
 To add you formcarry endpoint url to `_config.yml`, you'll need a fromcarry account, please refer to [formcarry documentation](https://formcarry.com/documentation/getting-started)

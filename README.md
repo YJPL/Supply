@@ -57,7 +57,7 @@ Add your custom configuration in the ```_config``` file.
 * Set in the *Data* / *Navigation* section, look for ```navigation.yml``` in  ```_data```.
 
 ### Footer
-Look for ```default.html``` in ```_layouts``` to add your footer links.
+Look for ```footer.html``` in ```_includes``` to add and change your footer links.
 
 ### Contact Page
 To add you formcarry endpoint URL to `_config.yml`, you'll need a fromcarry account, please refer to [formcarry documentation](https://formcarry.com/documentation/getting-started)
