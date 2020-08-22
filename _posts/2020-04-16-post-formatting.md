@@ -97,7 +97,8 @@ Make sure your [block inline attribute lists](https://kramdown.gettalong.org/syn
 
 ### YouTube
 
-{% include video.html src="https://www.youtube-nocookie.com/embed/RjggipNdmXw" %}
+{% include video.html src="https://www.youtube-nocookie.com/embed/lP2ABiIFGcw" %}
+
 
 ### Vimeo
 
@@ -297,7 +298,7 @@ Beautiful notices that are designed to grab a visitors attention.
 
 ## Links / Anchor Tag
 
-[Primary link](#) - Set primary colors in `variables.scss`.
+[Primary link](#) - You can set custom primary colors in `sup-theme.css`.
 
 [Open link in new tab](https://google.com){:target="_blank"}
 
