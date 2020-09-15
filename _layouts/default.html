@@ -23,12 +23,12 @@
 			</div>
 
 			<section class="hero pv3 ph3 ph6-ns w-100">
-				<div class="text-container ">
+				<div itemscope class="text-container ">
 					{% if page.hero %}
-						<h2 itemprop="name" class="f1 lh-title helvetica">{{ page.hero }}</h2>
+						<h2 itemprop="title" class="f1 lh-title helvetica">{{ page.hero }}</h2>
 
 					{% elsif page.title %}
-						<h2 itemprop="name" class="f1 lh-title helvetica">{{ page.title }}</h2>
+						<h2 itemprop="title" class="f1 lh-title helvetica">{{ page.title }}</h2>
 					{% endif %}
 
 					{% if page.subtitle %}
