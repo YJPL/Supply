@@ -24,13 +24,16 @@
     "url": "https://github.com/YJPL/supply/issues"
   },
   "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "cross-env": "^7.0.2",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
     "gulp-newer": "^1.4.0",
     "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^8.0.0",
+    "gulp-postcss": "^9.0.0",
     "gulp-size": "^3.0.0",
     "immutable-css-cli": "^1.1.1",
+    "postcss": "^8.1.2",
     "watch": "^1.0.2"
   },
   "contributors": [
@@ -48,9 +51,8 @@
     "build:watch": "watch \"npm run build\" ./src/"
   },
   "dependencies": {
-    "autoprefixer": "^9.8.6",
-    "browser-sync": "^2.26.12",
-    "del": "^5.1.0",
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
     "gulp-basswork": "^0.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-eslint": "^6.0.0",
