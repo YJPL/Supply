@@ -24,7 +24,7 @@
     "url": "https://github.com/YJPL/supply/issues"
   },
   "devDependencies": {
-    "autoprefixer": "^10.0.1",
+    "autoprefixer": "^10.0.2",
     "cross-env": "^7.0.2",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
@@ -33,7 +33,7 @@
     "gulp-postcss": "^9.0.0",
     "gulp-size": "^3.0.0",
     "immutable-css-cli": "^1.1.1",
-    "postcss": "^8.1.6",
+    "postcss": "^8.1.7",
     "watch": "^1.0.2"
   },
   "contributors": [
