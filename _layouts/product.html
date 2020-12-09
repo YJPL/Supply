@@ -10,8 +10,10 @@ layout: default
 
 				{% include product-styles.html product=page %}
 				<div itemscope itemtype="http://schema.org/Offer" class="w-100 w-50ns product-details measure-wide lh-copy f5 f4-ns helvetica black-60" id="add">
-
-					<h4 itemprop="itemOffered">Software: {{ page.software }}</h4>
+					
+					<h4 itemprop="itemOffered">Software: {{ page.software | join: ' ' }}</h4>
+					
+					{% comment %} Note that you can of course use your own custom front matter variable here, instead of "Software", see https://templates.supply/sorting-jekyll-collections-by-custom-variable/ {% endcomment %}
 
 					{% if page.format %}
 					<h5>Format: {{ page.format }}</h5>
