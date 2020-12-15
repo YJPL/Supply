@@ -12,4 +12,4 @@ config.codekit3
 Gemfile.lock
 node_modules
 npm-debug.log*
-_mdwriter.cson
+.nova
