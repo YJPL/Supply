@@ -52,8 +52,6 @@ If you have products on Gumroad, you can start right away by adding your product
 
 ## Develop
 
-## Develop
-
 ### Building front-end assets: styles and scripts
 
 Install Node module dependencies:
