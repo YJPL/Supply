@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "browser-sync": "^2.26.13",
+    "axios": "~> 0.21.1",
     "del": "^6.0.0",
     "gulp-basswork": "^0.2.0",
     "gulp-concat": "^2.6.1",
