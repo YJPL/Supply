@@ -10,7 +10,7 @@ If you are a Gumroad creator, you can use Supply with Jekyll to display and sell
 
 Browse through a live demo: [https://templates.supply](https://templates.supply).
 
-![Supply template screenshot](/images/templates/jekyll/Supply-temp.png)
+![Supply template screenshot](/images/screenshot.png)
 
 Find more [templates, themes, and Jekyll tutorials](https://jekyllrb.com/resources/).
 
