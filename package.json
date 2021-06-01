@@ -56,6 +56,6 @@
     "gulp-concat": "^2.6.1",
     "gulp-eslint": "^6.0.0",
     "gulp-rename": "^2.0.0",
-    "is-svg": ">=4.2.2"
+    "is-svg": ">=4.3.1"
   }
 }
