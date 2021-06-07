@@ -30,7 +30,7 @@
     "gulp-newer": "^1.4.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.0",
-    "gulp-size": "^4.0.0",
+    "gulp-size": "^4.0.1",
     "immutable-css-cli": "^1.1.1",
     "postcss": "^8.3.0",
     "watch": "^1.0.2"
