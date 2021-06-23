@@ -32,7 +32,7 @@
     "gulp-postcss": "^9.0.0",
     "gulp-size": "^4.0.1",
     "immutable-css-cli": "^1.1.1",
-    "postcss": "^8.3.0",
+    "postcss": "^8.3.5",
     "watch": "^1.0.2"
   },
   "contributors": [
