@@ -5,7 +5,7 @@ description_markdown: >-
   Add metadata tags for search engines and social networks to better index you site using Supply.
 date: 2021-08-26
 image: /images/templates/assignments/assignments_tracker_spreadsheet.png
-categories: [Jekyll]
+categories: [Jekyll, tutorial]
 tags: [SEO]
 ---
 
