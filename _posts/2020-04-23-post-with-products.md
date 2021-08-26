@@ -3,8 +3,7 @@ name: Post with products
 layout: post
 description_markdown: >-
   This is an example post with a product with Gumroad overlay.
-date: 2020-04-23
- 12:48:59 +0100
+date: 2020-04-23 12:48:59 +0100
 id: supply
 price: Free
 text-button: I want to use this theme!
