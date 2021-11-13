@@ -50,6 +50,10 @@
     "build:watch": "watch \"npm run build\" ./src/"
   },
   "dependencies": {
+    "ansi-regex": ">=5.0.1",
+    "color-string": ">=1.5.5",
+    "trim-newlines": ">=3.0.1",
+    "merge": ">=2.1.1",
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "gulp-basswork": "^0.2.0",
