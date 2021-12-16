@@ -25,14 +25,14 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "cssnano": "^5.0.11",
+    "cssnano": "^5.0.13",
     "gulp": "^4.0.2",
     "gulp-newer": "^1.4.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.1",
     "gulp-size": "^4.0.1",
     "immutable-css-cli": "^1.1.1",
-    "postcss": "^8.3.11",
+    "postcss": "^8.4.5",
     "watch": "^1.0.2"
   },
   "contributors": [
@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "ansi-regex": ">=5.0.1",
-    "color-string": ">=1.5.5",
+    "color-string": ">=1.9.0",
     "trim-newlines": ">=3.0.1",
     "merge": ">=2.1.1",
     "browser-sync": "^2.27.7",
