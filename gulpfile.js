@@ -3,7 +3,6 @@
 // Load plugins
 const autoprefixer = require("autoprefixer");
 const browsersync = require("browser-sync").create();
-const concat = require("gulp-concat");
 const postcss = require("gulp-postcss");
 const cp = require("child_process");
 const cssnano = require("cssnano");
