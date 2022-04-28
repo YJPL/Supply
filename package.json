@@ -24,14 +24,13 @@
     "url": "https://github.com/YJPL/supply/issues"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.4",
+    "autoprefixer": "^10.4.5",
     "cssnano": "^5.1.7",
     "gulp": "^4.0.2",
     "gulp-newer": "^1.4.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.1",
     "gulp-size": "^4.0.1",
-    "immutable-css-cli": "^1.1.1",
     "postcss": "^8.4.12",
     "watch": "^1.0.2"
   },
@@ -41,23 +40,11 @@
       "email": ""
     }
   ],
-  "scripts": {
-    "start": "npm run build:watch",
-    "mutations": "immutable-css src/sup-tachyons.css --strict",
-    "build": "npm run build:css && npm run build:minify",
-    "build:css": "tachyons src/sup-tachyons.css > assets/css/sup-tachyons.css",
-    "build:minify": "tachyons src/sup-tachyons.css --minify > assets/css/sup-tachyons.min.css",
-    "build:watch": "watch \"npm run build\" ./src/"
-  },
   "dependencies": {
-    "ansi-regex": ">=5.0.1",
     "browser-sync": "^2.27.9",
-    "color-string": ">=1.9.0",
     "del": "^6.0.0",
     "gulp-basswork": "^0.2.0",
     "gulp-eslint": "^6.0.0",
-    "gulp-rename": "^2.0.0",
-    "merge": ">=2.1.1",
-    "trim-newlines": ">=3.0.1"
+    "gulp-rename": "^2.0.0"
   }
 }
