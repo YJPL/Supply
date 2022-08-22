@@ -6,7 +6,7 @@ const browsersync = require("browser-sync").create();
 const postcss = require("gulp-postcss");
 const cp = require("child_process");
 const cssnano = require("cssnano");
-const del = require("del");
+//const del = require("del");
 const eslint = require("gulp-eslint");
 const gulp = require("gulp");
 const newer = require("gulp-newer");
@@ -33,9 +33,9 @@ function browserSyncReload(done) {
 }
 
 // Clean assets
-function clean() {
-  return del(["./_site/assets/"]);
-}
+//function clean() {
+//  return del(["./_site/assets/"]);
+//}
 
 // CSS task
 function css() {
@@ -93,12 +93,12 @@ function watchFiles() {
 gulp.task("css", css);
 //gulp.task("js", gulp.series(scriptsLint, scripts));
 gulp.task("jekyll", jekyll);
-gulp.task("clean", clean);
+//gulp.task("clean", clean);
 
 // build
 gulp.task(
   "build",
-  gulp.series(clean, gulp.parallel(css, jekyll))
+  gulp.series(gulp.parallel(css, jekyll))
 );
 
 // watch
