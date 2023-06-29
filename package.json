@@ -5,10 +5,7 @@
   "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YJPL/supply/",
-    "scripts": {
-      "gulp": "gulp"
-    }
+    "url": "https://github.com/YJPL/supply/"
   },
   "keywords": [
     "css",
