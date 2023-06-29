@@ -88,7 +88,7 @@ Tachyons is a CSS toolkit and design system based on using components. Please re
 
 ### npm commands with browser reload
 
-Supply uses a couple of custom Gulp.js commands with gulp. Make sure to install gulp 4: `npm install --global gulp-cli`. (If you have an earlier version of Gulp JS, make sure to remove it by running npm uninstall --global gulp).  Then run `npm install --save-dev gulp@4` to install it into your project development dependencies.
+Supply uses a couple of custom Postcss npm scripts. Make sure your dependencies are installed: `npm install`. Type `npm outdated` to see if you have outdated versions, then install any outdated dependencies.
 
 Once that is done, to build your site & concatenate your CSS (in `assets` -> `CSS`), simply run:
 
