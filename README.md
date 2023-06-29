@@ -86,27 +86,17 @@ You can change the site styling using [Tachyons](http://tachyons.io), look for t
 
 Tachyons is a CSS toolkit and design system based on using components. Please refer to [Tachyons documentation](http://tachyons.io/docs/), you can also start with [https://github.com/dwyl/learn-tachyons](https://github.com/dwyl/learn-tachyons)
 
-### Gulp commands with browser reload
+### npm commands with browser reload
 
 Supply uses a couple of custom Gulp.js commands with gulp. Make sure to install gulp 4: `npm install --global gulp-cli`. (If you have an earlier version of Gulp JS, make sure to remove it by running npm uninstall --global gulp).  Then run `npm install --save-dev gulp@4` to install it into your project development dependencies.
 
 Once that is done, to build your site & concatenate your CSS (in `assets` -> `CSS`), simply run:
 
-~~~bash
-gulp build
-~~~
+```
+npm run start
+```
 
-in Terminal.
-
-Then use
-
-
-~~~bash
-gulp watch
-~~~
-
-This command builds the site locally on port 3000, with [Browsersync](https://www.browsersync.io) so you can quickly revise design changes.
-
+to process Tachyons CSS files, compile and minify CSS & Javascript, then build the site locally on port 3000, thanks to [Browsersync](https://www.browsersync.io) so you can quickly revise design changes.
 
 Preview your site with browser reload at [localhost:3000](http://localhost:3000)
 Use the address [localhost:3001](http://localhost:3001) for additional features like grid preview, CSS highlighting, and more during development.
