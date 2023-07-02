@@ -25,7 +25,7 @@ Find more [templates, themes, and Jekyll tutorials](https://jekyllrb.com/resourc
 - [x] RSS/Atom feed
 - [x] SEO tags
 - [x] Microdata markup
-- [x] [Gulp.js](https://gulpjs.com) + [Browsersync](https://www.browsersync.io) for fast development
+- [ ] Jektll `livereload` + [Browsersync](https://www.browsersync.io) for fast development
 - [x] Built-in site search
 
 ## Setup
