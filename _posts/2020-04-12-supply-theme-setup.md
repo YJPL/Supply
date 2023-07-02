@@ -15,7 +15,7 @@ Supply is designed to sell products through [Gumroad](https://gumroad.com), but 
 
 1. Install [Jekyll](https://jekyllrb.com/docs/installation/)
 2. Add your site and author details in `_config.yml`.
-3. Get a workflow going to see your site's output with Jekyll locally using Jekyll commands or Gulp.
+3. Get a workflow going to see your site's output with Jekyll locally using Jekyll commands or npm.
 
 *Supply* was built with [Jekyll](http://jekyllrb.com/) version 4.0.0, and should support newer versions as well.
 
