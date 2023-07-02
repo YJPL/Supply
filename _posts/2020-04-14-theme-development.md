@@ -4,6 +4,7 @@ layout: post
 description_markdown: >-
   Custom commands, styling and development notes for Supply.
 date: 2020-04-16 12:48:59 +0100
+last_modified_at: 2023-07-03
 categories: [Jekyll, tutorial]
 ---
 ## Develop
@@ -14,10 +15,13 @@ All the files
 supply % tree
 .
 ├── 301.txt
+├── CNAME
+├── CODE_OF_CONDUCT.md
 ├── Gemfile
 ├── Gemfile.lock
 ├── LICENSE
 ├── README.md
+├── SECURITY.md
 ├── _config.yml
 ├── _data
 │   ├── navigation.yml
@@ -26,6 +30,7 @@ supply % tree
 │   ├── Gumroad-secured.html
 │   ├── category_tag_list.html
 │   ├── figure
+│   ├── footer.html
 │   ├── formcarry.html
 │   ├── gumroad-embed.html
 │   ├── gumroad-link.html
@@ -49,6 +54,7 @@ supply % tree
 │   ├── blog.html
 │   ├── contact-success.html
 │   ├── contact.html
+│   ├── faq.md
 │   ├── free-products.html
 │   ├── privacy.md
 │   └── support.md
@@ -56,17 +62,18 @@ supply % tree
 │   ├── 2020-04-12-how-to-use-jekyll.md
 │   ├── 2020-04-12-supply-theme-setup.md
 │   ├── 2020-04-14-theme-development.md
-│   ├── 2020-04-15-add-a-product-page.md
 │   ├── 2020-04-15-custom-variables.md
 │   ├── 2020-04-16-post-formatting.md
-│   ├── 2020-04-17-post-with-products.md
-│   ├── 2020-04-18-gumroad-embed.md
-│   ├── 2020-04-18-gumroad-hyperlink.md
-│   ├── 2020-04-18-gumroad-overlay.md
+│   ├── 2020-04-17-code-blocks.md
 │   ├── 2020-04-19-post-updated.md
 │   ├── 2020-04-20-post-video.md
-│   ├── 2020-04-21-code-blocks.md
-│   └── 2020-04-24-built-in-site-search.md
+│   ├── 2020-04-21-built-in-site-search.md
+│   ├── 2020-04-22-add-a-product-page.md
+│   ├── 2020-04-23-gumroad-embed.md
+│   ├── 2020-04-23-gumroad-hyperlink.md
+│   ├── 2020-04-23-gumroad-overlay.md
+│   ├── 2020-04-23-post-with-products.md
+│   └── 2021-08-26-jekyll-SEO.md
 ├── _products
 │   ├── Screenplay-template-for-Apple-Pages-Warner-Brothers.md
 │   ├── assignments-tracker.md
@@ -82,13 +89,13 @@ supply % tree
 │   │   ├── sup-tachyons.css
 │   │   └── sup-tachyons.min.css
 │   ├── js
-│   │   └── fetch.js
+│   │   ├── fetch.js
+│   │   └── script.min.js
 │   └── search.json
 ├── browserconfig.xml
 ├── favicon-16x16.png
 ├── favicon-32x32.png
 ├── favicon.ico
-├── gulpfile.js
 ├── images
 │   ├── image-1200.jpg
 │   ├── image-600.jpg
@@ -107,7 +114,6 @@ supply % tree
 │           ├── Screenplay_Cole_Haag_template.png
 │           └── Screenplay_Warner_Brothers_template.png
 ├── index.html
-├── js
 ├── mstile-144x144.png
 ├── mstile-150x150.png
 ├── mstile-310x150.png
@@ -115,6 +121,7 @@ supply % tree
 ├── mstile-70x70.png
 ├── package-lock.json
 ├── package.json
+├── postcss.config.js
 ├── robots.txt
 ├── safari-pinned-tab.svg
 ├── site.webmanifest
@@ -193,36 +200,46 @@ The ```_layouts``` folder is where you can change the structure of your pages la
 By default, products are showcased in `_products` collection, all or only highlighted templates are show on the home page. You can also add Gumroad overlay for products in posts thanks to an include. You'll find a few product pages as samples
 
 ### Styling with Tachyons
+You can change the site styling using [Tachyons](http://tachyons.io), look for the CSS in the `sup-theme` file, located in the `src` folder.
 
-You can change the site styling thanks to [Tachyons](http://tachyons.io). All the theme's custom CSS are in a single place: look for `sup-theme` in the `src` folder.
+Tachyons is a CSS toolkit and design system based on using components. Please refer to [Tachyons documentation](http://tachyons.io/docs/), you can also start with [https://github.com/dwyl/learn-tachyons](https://github.com/dwyl/learn-tachyons)
 
-Please refer to [Tachyons documentation](http://tachyons.io/docs/), you can also start with [https://github.com/dwyl/learn-tachyons](https://github.com/dwyl/learn-tachyons)
+Once you are done with your style changes, run:
 
-### Gulp commands with browser reload
-
-To see your changes, in the terminal, simply run
-
+Run the npm run 
 ~~~bash
-gulp build
+build:css
 ~~~
 
-that will build your site and concatenate your css (in `asset` -> `css`)
+That will process all your CSS files in one readable file located in `assets/css/sup-tachyons.css`. 
+
+to minify your css you can run 
+
+```
+npm run minify-css
+```
+
+or 
+
+```
+npm run start
+```
+
+to minify and build the site locally.
 
 
-then, use
+### npm commands with browser reload
 
+Supply uses a couple of custom Postcss npm scripts. Make sure your dependencies are installed: `npm install`. Type `npm outdated` to see if you have outdated versions, then install any outdated dependencies.
 
-~~~bash
-gulp watch
-~~~
+Once that is done, to build your site & concatenate your CSS (in `assets` -> `CSS`), simply run:
 
-to check your site locally.
+```
+npm run start
+```
 
-This command builds the site locally on port 3000, with [Browsersync](https://www.browsersync.io) so you can quickly revise design changes.
+This command builds the site locally on port 4000, you can quickly revise design changes thanks to `livereload`.
 
-
-Preview your site with browser reload at: [localhost:3000](http://localhost:3000)
-Use the address localhost:3001 for additional help like grid preview, css highlight and more during development.
 
 ## Contribute
 Supply code is freely available and contributions are welcome.

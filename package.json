@@ -21,32 +21,30 @@
     "url": "https://github.com/YJPL/supply/issues"
   },
   "devDependencies": {
-      "autoprefixer": "^10.4.14",
-      "cssnano": "^6.0.1",
-      "postcss": "^8.4.24",
-      "postcss-cli": "^10.1.0",
-      "postcss-import": "^15.1.0",
-      "postcss-nested": "^6.0.1",
-      "postcss-preset-env": "^8.5.1",
-      "uglify-js": "^3.17.4"
-    },
-    "contributors": [
-      {
-        "name": "YJPL",
-        "email": ""
-      }
-    ],
-    "scripts": {
-      "start": "npm run build && npm run build:jekyll && npm run browser-sync",
-      "build:jekyll": "JEKYLL_ENV=production bundle exec jekyll build",
-      "minify-js": "uglifyjs assets/js/*.js -o assets/js/script.min.js",
-      "build": "npm run minify:css && npm run minify-js",
-      "build:css": "postcss-nested src/sup-tachyons.css > assets/css/sup-tachyons.css",
-      "minify:css": "postcss assets/css/sup-tachyons.css > assets/css/sup-tachyons.min.css --config postcss.config.js",
-      "browser-sync": "browser-sync start --config bs-config.js"
-    },
-    "dependencies": {
-      "browser-sync": "^2.29.3",
-      "sharp": "^0.32.1"
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.1",
+    "postcss-preset-env": "^8.5.1",
+    "uglify-js": "^3.17.4"
+  },
+  "contributors": [
+    {
+      "name": "YJPL",
+      "email": ""
     }
+  ],
+  "scripts": {
+    "start": "npm run build && npm run serve:jekyll",
+    "serve:jekyll": "JEKYLL_ENV=development bundle exec jekyll serve --livereload",
+    "minify-js": "uglifyjs assets/js/*.js -o assets/js/script.min.js",
+    "build": "npm run build:css && npm run minify:css",
+    "build:css": "postcss src/sup-tachyons.css > assets/css/sup-tachyons.css",
+    "minify:css": "postcss assets/css/sup-tachyons.css > assets/css/sup-tachyons.min.css  --use cssnano"
+  },
+  "dependencies": {
+    "sharp": "^0.32.1"
   }
+}

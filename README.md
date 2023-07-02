@@ -86,6 +86,30 @@ You can change the site styling using [Tachyons](http://tachyons.io), look for t
 
 Tachyons is a CSS toolkit and design system based on using components. Please refer to [Tachyons documentation](http://tachyons.io/docs/), you can also start with [https://github.com/dwyl/learn-tachyons](https://github.com/dwyl/learn-tachyons)
 
+Once you are done with your style changes, run:
+
+Run the npm run 
+~~~bash
+build:css
+~~~
+
+That will process all your CSS files in one readable file located in `assets/css/sup-tachyons.css`. 
+
+to minify your css you can run 
+
+```
+npm run minify-css
+```
+
+or 
+
+```
+npm run start
+```
+
+to minify and build the site locally.
+
+
 ### npm commands with browser reload
 
 Supply uses a couple of custom Postcss npm scripts. Make sure your dependencies are installed: `npm install`. Type `npm outdated` to see if you have outdated versions, then install any outdated dependencies.
@@ -96,11 +120,7 @@ Once that is done, to build your site & concatenate your CSS (in `assets` -> `CS
 npm run start
 ```
 
-to process Tachyons CSS files, compile and minify CSS & Javascript, then build the site locally on port 3000, thanks to [Browsersync](https://www.browsersync.io) so you can quickly revise design changes.
-
-Preview your site with browser reload at [localhost:3000](http://localhost:3000)
-Use the address [localhost:3001](http://localhost:3001) for additional features like grid preview, CSS highlighting, and more during development.
-
+This command builds the site locally on port 4000, you can quickly revise design changes thanks to `livereload`.
 
 ## Editing
 
