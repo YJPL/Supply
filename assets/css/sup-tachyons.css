@@ -978,9 +978,9 @@ img { max-width: 100%; }
 
 .b--inherit { border-color: inherit; }
 
-.b--initial { border-color: currentColor; border-color: initial; }
+.b--initial { border-color: currentcolor; border-color: initial; }
 
-.b--unset { border-color: currentColor; border-color: initial; }
+.b--unset { border-color: currentcolor; border-color: initial; }
 
 /*
 
