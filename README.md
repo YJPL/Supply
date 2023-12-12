@@ -12,6 +12,8 @@ Browse through a live demo: [https://templates.supply](https://templates.supply)
 
 ![Supply template screenshot](/images/screenshot.png)
 
+Supply is designed by [alternatyves](https://alternatyves.com/).
+
 Find more [templates, themes, and Jekyll tutorials](https://jekyllrb.com/resources/).
 
 ## Features
@@ -25,7 +27,7 @@ Find more [templates, themes, and Jekyll tutorials](https://jekyllrb.com/resourc
 - [x] RSS/Atom feed
 - [x] SEO tags
 - [x] Microdata markup
-- [ ] Jekyll `livereload` + [Browsersync](https://www.browsersync.io) for fast development
+- [x] Jekyll `livereload` + NPM for fast development
 - [x] Built-in site search
 
 ## Setup
