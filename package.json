@@ -21,7 +21,7 @@
     "url": "https://github.com/YJPL/supply/issues"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.16",
+    "autoprefixer": "^10.4.17",
     "cssnano": "^6.0.3",
     "postcss": "^8.4.33",
     "postcss-cli": "^11.0.0",
@@ -43,8 +43,5 @@
     "build": "npm run build:css && npm run minify:css",
     "build:css": "postcss src/sup-tachyons.css > assets/css/sup-tachyons.css",
     "minify:css": "postcss assets/css/sup-tachyons.css > assets/css/sup-tachyons.min.css  --use cssnano"
-  },
-  "dependencies": {
-    "sharp": "^0.33.0"
   }
 }
