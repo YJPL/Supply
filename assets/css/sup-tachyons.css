@@ -5541,9 +5541,6 @@ code, .code {
 .clip {
   position: fixed !important;
   _position: absolute !important;
-}
-
-.clip {
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
@@ -5552,8 +5549,6 @@ code, .code {
   .clip-ns {
     position: fixed !important;
     _position: absolute !important;
-  }
-  .clip-ns {
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
   }
@@ -5563,8 +5558,6 @@ code, .code {
   .clip-m {
     position: fixed !important;
     _position: absolute !important;
-  }
-  .clip-m {
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
   }
@@ -5574,8 +5567,6 @@ code, .code {
   .clip-l {
     position: fixed !important;
     _position: absolute !important;
-  }
-  .clip-l {
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
   }
@@ -6335,11 +6326,8 @@ nav a:last-child {
  */
 
 .notice {
-  margin: 2em 0 !important;
- }
-
-.notice {
-  background-color: white;  /* override*/
+  background-color: white;
+  margin: 2em 0 !important;  /* override*/
   padding: 1em;
   font-family: monospace;
   font-size: 1.25rem;
