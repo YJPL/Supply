@@ -6,6 +6,7 @@ description_markdown: >-
 date: 2020-04-16 12:48:59 +0100
 image: /images/templates/assignments/assignments_tracker_spreadsheet.png
 categories: [Jekyll, tutorial]
+last_modified_at: 2024-03-05
 ---
 ## Everything you need to format your posts
 
@@ -50,9 +51,9 @@ Add images to your post using markdown.
 
 ### Centered image with caption
 
-{% include figure image_path="/images/image-600.jpg" alt="image" caption="Mountain" %}{: .full .tc}
+{% include figure.html image_path="/images/image-1200.jpg" alt="image" caption="Mountain" %}{: .full .tc}
 
-![Mountain](/images/image-600.jpg)
+![Mountain](/images/image-1200.jpg)
 {: .tc}
 <figcaption>Mountain</figcaption>
 {: .tc}
@@ -79,7 +80,7 @@ Using Markdown:
 
 Input:
 ```markdown
-{% raw %}![Mountain](/images/image-600.jpg)
+{% raw %}![Mountain](/images/image-1200.jpg)
 {: .full .tc}
 {% endraw %}
 ```
@@ -87,7 +88,7 @@ Input:
 Result:
 
 ![Mountain](/images/image-1200.jpg)
-{: .full tc}
+{: .full .tc}
 
 Make sure your [block inline attribute lists](https://kramdown.gettalong.org/syntax.html#inline-attribute-lists){: .blue .hover-blue} like `{: .full .tc}` is not on the same line as your image markup to render styling properly
 {: .notice }
