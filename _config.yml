@@ -19,7 +19,7 @@ social:
   links:
     - https://github.com/YJPL/supply
     - https://www.linkedin.com/company/templates-supply/
-
+ 
 # Build settings
 markdown: kramdown
 timezone: FR
