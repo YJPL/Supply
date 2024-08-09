@@ -4,3 +4,5 @@ sitemap: false
 ---
 User-agent: *
 Sitemap: {{ site.url }}/sitemap.xml
+User-agent: GPTBot
+Disallow: /
