@@ -1,7 +1,7 @@
 {
   "name": "supply",
-  "version": "1.1.0",
-  "description": "Supply, an e-commere theme built with Jekyll and Gumroad",
+  "version": "1.1.1",
+  "description": "Supply, an e-commere theme for Gumroad, built with Jekyll",
   "main": "index.html",
   "repository": {
     "type": "git",
@@ -38,7 +38,7 @@
   ],
   "scripts": {
     "start": "npm run build && npm run serve:jekyll",
-    "serve:jekyll": "JEKYLL_ENV=development bundle exec jekyll serve --livereload",
+    "serve:jekyll": "JEKYLL_ENV=development bundle exec jekyll serve --livereload --open-url http://localhost:4000/",
     "minify-js": "uglifyjs assets/js/*.js -o assets/js/script.min.js",
     "build": "npm run build:css && npm run minify:css",
     "build:css": "postcss src/sup-tachyons.css > assets/css/sup-tachyons.css",
