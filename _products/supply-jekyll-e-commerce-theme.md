@@ -6,11 +6,11 @@ cat: web
 description_markdown: >-
   Supply, an open-source e-commerce theme for Jekyll, powered by Gumroad.
 date: 2020-05-09 11:48:06 +0100
-last_modified_at: '2020-02-26'
+last_modified_at: '2024-09-25'
 id: soon-jekyll
 price: Free
 text-button: I demand Supply!
-image: /images/templates/jekyll/Supply-temp.png
+image: /images/templates/jekyll/Supply-temp-square.png
 ---
 ## Supply, an e-commerce theme for Jekyll + Gumroad
 Supply is an e-commerce template for [Jekyll](https://jekyllrb.com/) + [Gumroad](https://gumroad.com) designed by by [alternatyves](https://alternatyves.com/). This is the theme underneath this site.
