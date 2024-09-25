@@ -148,7 +148,7 @@ Write something like:
 
 to get a product display like this:
 
-<a href="https://gum.co/supply" class="no-underline pv2 grow db"><img class="w-100" src="/images/screenshot.png"></a>
+<a href="https://gum.co/supply" class="no-underline pv2 grow db"><img class="w-100" src="/images/supply-overlay.png"></a>
 
 ## Copyright / License
 *Supply* is designed by [alternatyves](https://alternatyves.com/) and licensed under the [MIT license](https://github.com/YJPL/Supply/blob/master/LICENSE).
