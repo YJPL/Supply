@@ -26,8 +26,8 @@
     "postcss": "^8.4.47",
     "postcss-cli": "^11.0.0",
     "postcss-import": "^16.1.0",
-    "postcss-nested": "^6.2.0",
-    "postcss-preset-env": "^10.0.8",
+    "postcss-nested": "^7.0.2",
+    "postcss-preset-env": "^10.0.9",
     "uglify-js": "^3.19.3"
   },
   "contributors": [
