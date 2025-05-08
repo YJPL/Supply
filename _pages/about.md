@@ -50,7 +50,7 @@ Install the dependencies with [Bundler](http://bundler.io/):
 $ bundle install
 ~~~
 
-Run Jekyll commands through Bundler to ensure you're using the right versions:
+Run `jekyll` commands through Bundler to ensure you're using the right versions:
 
 ~~~bash
 $ bundle exec jekyll serve
@@ -87,35 +87,48 @@ If you have products on Gumroad, you can start adding product pages right away. 
 npm install
 ~~~
 
+
 ### Tachyons
 
 You can change the site styling using [Tachyons](http://tachyons.io), look for the CSS in the `sup-theme` file, located in the `src` folder.
 
 Tachyons is a CSS toolkit and design system based on using components. Please refer to [Tachyons documentation](http://tachyons.io/docs/), you can also start with [https://github.com/dwyl/learn-tachyons](https://github.com/dwyl/learn-tachyons)
 
-### Gulp commands with browser reload
+Once you are done with your style changes, run:
 
-Supply uses a couple of custom Gulp.js commands. To build your site concatenate your CSS (in `assets` -> `CSS`), simply run:
-
+Run the npm run 
 ~~~bash
-gulp build
+build:css
 ~~~
 
-in Terminal.
+That will process all your CSS files in one readable file located in `assets/css/sup-tachyons.css`. 
 
-Then use
+to minify your css you can run 
+
+```
+npm run minify-css
+```
+
+or 
+
+```
+npm run start
+```
+
+to minify and build the site locally.
 
 
-~~~bash
-gulp watch
-~~~
+### npm commands with browser reload
 
-This command builds the site locally on port 3000, with [Browsersync](https://www.browsersync.io) so you can quickly revise design changes.
+Supply uses a couple of custom Postcss npm scripts. Make sure your dependencies are installed: `npm install`. Type `npm outdated` to see if you have outdated versions, then install any outdated dependencies.
 
+Once that is done, to build your site & concatenate your CSS (in `assets` -> `CSS`), simply run:
 
-Preview your site with browser reload at [localhost:3000](http://localhost:3000)
-Use the address [localhost:3001](http://localhost:3001) for additional features like grid preview, CSS highlighting, and more during development.
+```
+npm run start
+```
 
+This command builds the site locally on port 4000, you can quickly revise design changes thanks to `livereload`.
 
 ## Editing
 
@@ -131,6 +144,7 @@ You can manually create pages based on this index to [sort your products or any 
 
 You can also add your products in regular posts, using the Gumroad [overlay](/gumroad-overlay/), [embed](/gumroad-embed/), and [hyperlinks](/gumroad-hyperlink/) method, thanks to an include snippet.
 
+Write something like:
 Write something like:
 
 ```html
