@@ -3,6 +3,7 @@ permalink: /about/
 title: About
 hero: About
 text-button: I demand Supply!
+last_modified_at: 2025-05-09
 ---
 ## Supply, a Jekyll theme
 Supply is an e-commerce template for [Jekyll](https://jekyllrb.com/) + [Gumroad](https://gumroad.com), designed with [Tachyons CSS](https://github.com/tachyons-css/tachyons) by [alternatyves](https://alternatyves.com/).
@@ -32,7 +33,7 @@ Find more [templates, themes, and Jekyll tutorials](https://jekyllrb.com/resourc
 - [x] RSS/Atom feed
 - [x] SEO tags
 - [x] Microdata markup
-- [x] [Gulp.js](https://gulpjs.com) + [Browsersync](https://www.browsersync.io) for fast development
+- [x] Jekyll `livereload` + NPM for fast development
 - [x] Built-in site search
 
 ## Setup
