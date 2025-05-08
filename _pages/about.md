@@ -159,7 +159,7 @@ to get a product display like this:
 
 {% include gumroad-overlay.html id="supply" %}
 
-## Open-source
+Free and open-source.
 
 [Get Supply](https://github.com/YJPL/Supply/archive/master.zip){: .btn .btn-outline--secondary }
 
