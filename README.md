@@ -119,7 +119,7 @@ Supply uses a couple of custom Postcss npm scripts. Make sure your dependencies 
 Once that is done, to build your site & concatenate your CSS (in `assets` -> `CSS`), simply run:
 
 ```
-npm run start
+npm start
 ```
 
 This command builds the site locally on port 4000, you can quickly revise design changes thanks to `livereload`.
