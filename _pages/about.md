@@ -3,7 +3,7 @@ permalink: /about/
 title: About
 hero: About
 text-button: I demand Supply!
-last_modified_at: 2025-05-09
+last_modified_at: 2025-06-22
 ---
 ## Supply, a Jekyll theme
 Supply is an e-commerce template for [Jekyll](https://jekyllrb.com/) + [Gumroad](https://gumroad.com), designed with [Tachyons CSS](https://github.com/tachyons-css/tachyons) by [alternatyves](https://alternatyves.com/).
@@ -125,7 +125,7 @@ Supply uses a couple of custom Postcss npm scripts. Make sure your dependencies 
 Once that is done, to build your site & concatenate your CSS (in `assets` -> `CSS`), simply run:
 
 ```
-npm run start
+npm start
 ```
 
 This command builds the site locally on port 4000, you can quickly revise design changes thanks to `livereload`.
