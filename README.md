@@ -1,7 +1,5 @@
 ## Supply, an e-commerce Jekyll theme with Gumroad integration
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d0fa21a2-19fa-45da-a77a-024c58295e7f/deploy-status)](https://app.netlify.com/sites/supply-demo/deploys)
-
 Supply is an e-commerce template for [Jekyll](https://jekyllrb.com/) + [Gumroad](https://gumroad.com), designed with [Tachyons CSS](https://github.com/tachyons-css/tachyons).
 
 If you are a Gumroad creator, you can use Supply with Jekyll to display and sell products on your site or blog.
