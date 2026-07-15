@@ -21,9 +21,9 @@
     "url": "https://github.com/YJPL/supply/issues"
   },
   "devDependencies": {
-    "autoprefixer": "^10.5.2",
+    "autoprefixer": "^10.5.3",
     "cssnano": "^8.0.2",
-    "postcss": "^8.5.16",
+    "postcss": "^8.5.19",
     "postcss-cli": "^11.0.1",
     "postcss-import": "^16.1.1",
     "postcss-nested": "^7.0.2",
