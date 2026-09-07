@@ -21,13 +21,13 @@
     "url": "https://github.com/YJPL/supply/issues"
   },
   "devDependencies": {
-  "autoprefixer": "^10.5.4",
-  "cssnano": "^9.0.2",
-  "postcss": "^8.5.26",
+  "autoprefixer": "^10.5.5",
+  "cssnano": "^9.0.3",
+  "postcss": "^8.5.28",
   "postcss-cli": "^11.0.1",
   "postcss-import": "^16.2.0",
   "postcss-nested": "^7.0.2",
-  "postcss-preset-env": "^11.5.1",
+  "postcss-preset-env": "^11.5.2",
   "uglify-js": "^3.19.3"
   },
   "contributors": [
